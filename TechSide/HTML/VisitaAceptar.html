@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin | Cable Color</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="../CSS/Index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <img class="Logo" src="../Images/logo.jpg" alt="Logo Cable Color" />
+        <ul>
+          <li>
+            <a href="./PerfilTecnico.html"><i class="fas fa-user"></i>Perfil</a>
+          </li>
+
+          <li>
+            <a href="./VisitaAceptar.html"
+              ><i class="fas fa-map-pin"></i>Visitas</a
+            >
+          </li>
+          <li>
+            <a href="./LoginTecnico.html"><i class="icon fas fa-sign-out-alt fa-fw "> Cerar sesion</i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <div class="header" style="font-size: 28px; text-align: center">
+          Visita Pendiente
+        </div>
+
+        <div class="inform" id="inform">
+          <label>Nombre del cliente: </label>
+          <label id="NombreCliente"></label><br /><br>
+
+          <label>Direccion: </label>
+          <label id="Direccion"></label><br /><br>
+
+          <label>Colonia: </label>
+          <label id="Colonia"></label><br /><br>
+
+          <label>Referencia: </label>
+          <label id="Referencia"></label><br /><br>
+
+          <label>Telefono: </label>
+          <label id="Telefono"></label><br /><br>
+
+          <label>Fecha visita: </label>
+          <label id="Visita"></label><br /><br>
+
+          <label>Tipo de servicio: </label>
+          <label id="Servicio"></label><br /><br>
+
+          <label>Estado: </label>
+          <label id="Estado"></label><br />
+          <div class="boton">
+            <button id="btnConfirm" type="button">Completar Visita</button>
+          </div>
+        </div>
+        
+
+        <div class="popup" id="popup">
+          <div class="titulos">
+            <label>Calificar al tecnico</label>
+          </div>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="5">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="4">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="3">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="2">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="1">1 star</label>
+          </div>
+          <select class="Coloniass" id="ServicioSeleccionado">
+            <option id="Labeled">Seleccione un servicio</option>
+          </select>
+          <div class="responses">
+            <label class="minititutlo">Comentarios: </label><br /><textarea
+              rows="4"
+              cols="50"
+              class="box"
+              type="text"
+              id="Coment"
+            ></textarea>
+          </div>
+          <button type="button" id="btnCancel">Cancelar</button>
+          <button type="button" id="btnEncuesta">Completar encuesta</button>
+        </div>
+
+        <div class="mostrarifnull" id="mostrarifnull">
+          <label>No hay visitas pendientes!</label><br>
+          <!-- <button type="button" id="btnCOnfirmarCLose">Confirmar</button> -->
+        </div>
+      </div>
+    </div>
+    <script src="../JS/VisitaAceptar.js"></script>
+  </body>
+</html>
